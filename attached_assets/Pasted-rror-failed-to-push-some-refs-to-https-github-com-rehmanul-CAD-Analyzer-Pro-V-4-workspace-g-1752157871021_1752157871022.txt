@@ -1,0 +1,58 @@
+rror: failed to push some refs to 'https://github.com/rehmanul/CAD-Analyzer-Pro-V-4'
+~/workspace$ git pull origin main   # Pull the latest changes from the main branch
+# Resolve any merge conflicts if they arise
+git add .              # Stage your resolved files
+git commit -m "Resolved merge conflicts"  # Commit your changes
+git push origin main   # Attempt to push your changes again
+fatal: couldn't find remote ref main
+On branch main
+Your branch is ahead of 'origin/main' by 23 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Enumerating objects: 227, done.
+Counting objects: 100% (227/227), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (182/182), done.
+Writing objects: 100% (227/227), 3.68 MiB | 3.07 MiB/s, done.
+Total 227 (delta 122), reused 100 (delta 42), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (122/122), done.
+remote: fatal: did not receive expected object 8e04b62c4ac7baf7e3896a8d6159668ca66069c5
+error: remote unpack failed: index-pack failed
+To https://github.com/rehmanul/CAD-Analyzer-Pro-V-4
+ ! [remote rejected] main -> main (failed)
+error: failed to push some refs to 'https://github.com/rehmanul/CAD-Analyzer-Pro-V-4'
+~/workspace$ git push -f origin main
+Enumerating objects: 227, done.
+Counting objects: 100% (227/227), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (182/182), done.
+Writing objects: 100% (227/227), 3.68 MiB | 6.74 MiB/s, done.
+Total 227 (delta 122), reused 100 (delta 42), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (122/122), done.
+remote: fatal: did not receive expected object 8e04b62c4ac7baf7e3896a8d6159668ca66069c5
+error: remote unpack failed: index-pack failed
+To https://github.com/rehmanul/CAD-Analyzer-Pro-V-4
+ ! [remote rejected] main -> main (failed)
+error: failed to push some refs to 'https://github.com/rehmanul/CAD-Analyzer-Pro-V-4'
+~/workspace$ git fetch origin
+git reset --hard origin/main
+HEAD is now at b708bc0 Assistant checkpoint: Update packages for Python 3.13 compatibility
+~/workspace$ git remote remove origin
+git init
+git remote add origin https://github.com/rehmanul/CAD-Analyzer-Pro-V-4.git
+Reinitialized existing Git repository in /home/runner/workspace/.git/
+~/workspace$ git push -f origin main
+Enumerating objects: 108, done.
+Counting objects: 100% (108/108), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (65/65), done.
+Writing objects: 100% (108/108), 2.06 MiB | 6.48 MiB/s, done.
+Total 108 (delta 42), reused 108 (delta 42), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (42/42), done.
+remote: fatal: did not receive expected object 8e04b62c4ac7baf7e3896a8d6159668ca66069c5
+error: remote unpack failed: index-pack failed
+To https://github.com/rehmanul/CAD-Analyzer-Pro-V-4.git
+ ! [remote rejected] main -> main (failed)
+error: failed to push some refs to 'https://github.com/rehmanul/CAD-Analyzer-Pro-V-4.git'
+~/workspace$ 
